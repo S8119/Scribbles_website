@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+label, div#wholeForm > form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+fieldset.number {
+    text-align: center;
+}
+
+div#wholeForm {
+    line-height: 2rem;
+    display: flex;
+    flex-flow: row;
+    margin-top: 2rem;
+}
+
+div#wholeForm > form {
+    width: 15vw;
+    margin-right: 4vw;
+    margin-left: 4vw;
+}
+
+input[type="number"] {
+    width: 10vw;
+    line-height: 2rem;
+}
+
+label {
+    width: 15vw;
+}
+
+h1, body > p {
+    text-align: center;
+}
+
+body > p:first-of-type {
+    font-size: 1.25rem;
+}
+
+body > p a:hover {
+    color: hsl(210, 100%, 75%);
+    text-decoration: none;
+}
+
+img {
+    width: 15vw;
+}
+
+img#logo{
+    margin-left: 25vw;
+    width: 50vw;
+}
+
+body > div:first-of-type {
+    border-style: solid;
+    width: 20vw;
+    margin-left: 39vw;
+    background-color: lightblue;
+}
+
+body > div:first-of-type > p {
+    text-align: center;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+p#totalCost {
+    font-size: 2rem;
+    text-decoration: none;
+}
