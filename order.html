@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scribbles Order</title>
+    <link href="css/scribbles_appearance.css" rel="stylesheet" />
+    <link href="css/form_style.css" rel="stylesheet" />
+    <link href="css/overlay_style.css" rel="stylesheet" />
+    <script src="js/order_page.js" defer></script>
+    <script src="js/date.js" defer></script>
+    <script src = "js/button.js" defer></script>
+</head>
+
+<body>
+<header>
+    <a href="home_page.html"><img src="images/website%20logo.png" alt="Scribbles" id="logo"></a>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home_page.html">Home</a></li>
+        <li><a href="shabbos.html">Shabbos</a></li>
+        <li><a href="yamim_tovim.html">Yamim Tovim</a></li>
+        <li><a href="mitzvos.html">Mitzvos</a></li>
+        <li><a href="alef_beis.html">Alef Beis</a></li>
+        <li><a href="order.html">Order</a></li>
+    </ul>
+</nav>
+
+<h1>Calculate the Price of Your Order Here</h1>
+<p>
+    Please be aware that this webpage calculates the cost, but does not place your order. <br />
+    In order to place an order, please email us at <a href="mailto: scribbles@gmail.com">scribbles@gmail.com</a>.
+</p>
+<p>
+    Spiral: $0.99 per book<br />
+    Paperback: $1.49 per book<br />
+    Hardcover: $1.99 per book
+</p>
+<div>
+    <p>Total cost:</p>
+    <p id="totalCost"></p>
+</div>
+<article>
+    <div id="wholeForm">
+    <form>
+        <img src="images/shabbos_pics/shabbos_cover.jpg" alt="Shabbos Book" />
+        <fieldset class="number">
+        <input type="number" id="shabbos" name="shabbos" />
+        <label for="shabbos">Books</label>
+        </fieldset>
+        <br />
+        <fieldset>
+        <input type="radio" id="spiralShabbos" name="booktype" value="spiral" />
+        <label for="spiralShabbos">Spiral</label>
+        <br />
+        <input type="radio" id="paperbackShabbos" name="booktype" value="paperback" />
+        <label for="paperbackShabbos">Paperback</label>
+        <br />
+        <input type="radio" id="hardcoverShabbos" name="booktype" value="hardcover" />
+        <label for="hardcoverShabbos">Hardcover</label>
+        </fieldset>
+    </form>
+
+    <br />
+    <form>
+        <img src="images/yom_tov_pics/yom_tov_cover.jpg" alt="Yom Tov Book" />
+        <fieldset class="number">
+        <input type="number" id="yamimTovim" name="yamimTovim" />
+        <label for="yamimTovim">Books</label>
+        </fieldset>
+        <br />
+        <fieldset>
+        <input type="radio" id="spiralYamimTovim" name="booktype" value="spiral" />
+        <label for="spiralYamimTovim">Spiral</label>
+        <br />
+        <input type="radio" id="paperbackYamimTovim" name="booktype" value="paperback" />
+        <label for="paperbackYamimTovim">Paperback</label>
+        <br />
+        <input type="radio" id="hardcoverYamimTovim" name="booktype" value="hardcover" />
+        <label for="hardcoverYamimTovim">Hardcover</label>
+        </fieldset>
+    </form>
+
+    <br />
+    <form>
+        <img src="images/mitzvos_pics/mitzvos_cover.jpg" alt="Mitzvos Book" />
+        <fieldset class="number">
+        <input type="number" id="mitzvos" name="mitzvos" />
+        <label for="mitzvos">Books</label>
+        </fieldset>
+        <br />
+        <fieldset>
+        <input type="radio" id="spiralMitzvos" name="booktype" value="spiral" />
+        <label for="spiralMitzvos">Spiral</label>
+        <br />
+        <input type="radio" id="paperbackMitzvos" name="booktype" value="paperback" />
+        <label for="paperbackMitzvos">Paperback</label>
+        <br />
+        <input type="radio" id="hardcoverMitzvos" name="booktype" value="hardcover" />
+        <label for="hardcoverMitzvos">Hardcover</label>
+        </fieldset>
+    </form>
+
+    <br />
+    <form>
+        <img src="images/aleph_beis_pics/aleph_bais_cover.png" alt="Aleph Bais Book" />
+        <fieldset class="number">
+        <input type="number" id="alefBeis" name="alefBeis" />
+        <label for="alefBeis">Books</label>
+        </fieldset>
+        <br />
+        <fieldset>
+        <input type="radio" id="spiralAlefBeis" name="booktype" value="spiral" />
+        <label for="spiralAlefBeis">Spiral</label>
+        <br />
+        <input type="radio" id="paperbackAlefBeis" name="booktype" value="paperback" />
+        <label for="paperbackAlefBeis">Paperback</label>
+        <br />
+        <input type="radio" id="hardcoverAlefBeis" name="booktype" value="hardcover" />
+        <label for="hardcoverAlefBeis">Hardcover</label>
+        </fieldset>
+    </form>
+    </div>
+</article>
+
+<footer>
+    <p id="contactInfo">Questions or comments? Want to place an order?<br />
+    Email us at <a href="mailto: scribbles@gmail.com">scribbles@gmail.com</a>.
+    </p>
+    <p>You are accessing this website on <span id="currentDate"></span>.</p>
+    <p>Last modified on <span id="modifiedDate"></span> (<span id="difference"></span> days ago).</p>
+</footer>
+</body>
+
+</html>
